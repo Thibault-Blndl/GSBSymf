@@ -100,5 +100,7 @@
             "allow-contrib": true,
             "require": "5.2.*"
         }
-    }
+    },
+    "name": "",
+    "description": ""
 }
