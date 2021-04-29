@@ -193,6 +193,6 @@ class __TwigTemplate_fd6b65a3b4fa8e2eeb62a315aeac9dfc6083596805f8c0d2ca870b798aa
         {% block body '' %}
     </body>
 </html>
-", "@WebProfiler/Profiler/base.html.twig", "/Users/Thibault/Downloads/GSBSYMFONY SIMON COMPLET/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/base.html.twig");
+", "@WebProfiler/Profiler/base.html.twig", "/Users/Thibault/Desktop/GSBSymf/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/base.html.twig");
     }
 }

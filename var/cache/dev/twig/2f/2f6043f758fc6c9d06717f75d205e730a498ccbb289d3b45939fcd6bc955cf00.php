@@ -97,6 +97,6 @@ class __TwigTemplate_88e21d7600980d890d890d1b2cd05d7c9f9e7a9d43193166693e3b77b35
         </div>
     </div>
 </div>
-", "@WebProfiler/Profiler/header.html.twig", "/Users/Thibault/Desktop/MissionGSBSymfony/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/header.html.twig");
+", "@WebProfiler/Profiler/header.html.twig", "/Users/Thibault/Desktop/GSBSymf/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/header.html.twig");
     }
 }

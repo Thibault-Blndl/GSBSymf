@@ -171,6 +171,6 @@ class __TwigTemplate_d376c1623635a68eabd3fa11e057f3cc30517774a168a0d7401ef4b9c12
         {%- endfor -%}
     </pre>
 {% endif %}
-", "@Doctrine/Collector/explain.html.twig", "/Users/Thibault/Desktop/MissionGSBSymfony/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
+", "@Doctrine/Collector/explain.html.twig", "/Users/Thibault/Desktop/GSBSymf/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
     }
 }

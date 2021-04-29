@@ -295,6 +295,6 @@ class __TwigTemplate_198e3fac13ee3dded3b4f0ab5fa7a5d30f136a1e31a35fa1add01725f69
     </div>
     <a href=\"{{ path('fiche_frais_new') }}\">Create new</a>
 {% endblock %}
-", "fiche_frais/index.html.twig", "/Users/Thibault/Downloads/GSBSYMFONY SIMON COMPLET/templates/fiche_frais/index.html.twig");
+", "fiche_frais/index.html.twig", "/Users/Thibault/Desktop/GSBSymf/templates/fiche_frais/index.html.twig");
     }
 }

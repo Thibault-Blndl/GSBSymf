@@ -174,6 +174,6 @@ class __TwigTemplate_fedff3210576968f094f5a3abbaea10814d34233ad75f156a93054183fc
         {% endif %}
     </div>
 {% endblock %}
-", "@WebProfiler/Profiler/open.html.twig", "/Users/Thibault/Desktop/MissionGSBSymfony/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.html.twig");
+", "@WebProfiler/Profiler/open.html.twig", "/Users/Thibault/Desktop/GSBSymf/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.html.twig");
     }
 }

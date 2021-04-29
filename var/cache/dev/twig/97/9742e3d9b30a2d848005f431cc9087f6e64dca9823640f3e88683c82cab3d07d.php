@@ -133,6 +133,6 @@ class __TwigTemplate_61a3c960f665c89a3259cd9f02bd7a6a7579e9b5f588d9a544e8187e994
 
     <a href=\"{{ path('fiche_frais_index') }}\">back to list</a>
 {% endblock %}
-", "fiche_frais/new.html.twig", "/Users/Thibault/Desktop/MissionGSBSymfony/templates/fiche_frais/new.html.twig");
+", "fiche_frais/new.html.twig", "/Users/Thibault/Desktop/GSBSymf/templates/fiche_frais/new.html.twig");
     }
 }

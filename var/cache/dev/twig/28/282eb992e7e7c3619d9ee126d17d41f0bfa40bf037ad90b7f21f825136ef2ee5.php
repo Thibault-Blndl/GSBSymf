@@ -84,6 +84,6 @@ class __TwigTemplate_31f2ee6c571aa6b79716cb70387d441e170a5c62fa5c98107ecb437eebf
     {{ form_widget(form) }}
     <button class=\"btn btn-outline-danger\">{{ button_label|default('Modifier') }}</button>
 {{ form_end(form) }}
-", "user/_form.html.twig", "/Users/Thibault/Desktop/MissionGSBSymfony/templates/user/_form.html.twig");
+", "user/_form.html.twig", "/Users/Thibault/Desktop/GSBSymf/templates/user/_form.html.twig");
     }
 }

@@ -261,6 +261,6 @@ class __TwigTemplate_6cb5f308f1c0e73f4609ec25bd8b04ed6cf0d50f5b1afeb5c4373eb52fa
 
     <a href=\"{{ path('user_new') }}\">Create new</a>
 {% endblock %}
-", "user/index.html.twig", "/Users/Thibault/Desktop/MissionGSBSymfony/templates/user/index.html.twig");
+", "user/index.html.twig", "/Users/Thibault/Desktop/GSBSymf/templates/user/index.html.twig");
     }
 }

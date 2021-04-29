@@ -227,6 +227,6 @@ class __TwigTemplate_db48051f9946721941c8414ccdc6347fdc9a2c72b374e86341f2b7d4c7d
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/exception.html.twig", "/Users/Thibault/Downloads/GSBSYMFONY SIMON COMPLET/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.html.twig");
+", "@WebProfiler/Collector/exception.html.twig", "/Users/Thibault/Desktop/GSBSymf/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.html.twig");
     }
 }

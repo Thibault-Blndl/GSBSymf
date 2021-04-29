@@ -898,6 +898,6 @@ class __TwigTemplate_08c676dba7fcbd2c4d081fdb31f9bf070870eae2d955c329be3c2d605ef
         </tbody>
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/translation.html.twig", "/Users/Thibault/Downloads/GSBSYMFONY SIMON COMPLET/vendor/symfony/web-profiler-bundle/Resources/views/Collector/translation.html.twig");
+", "@WebProfiler/Collector/translation.html.twig", "/Users/Thibault/Desktop/GSBSymf/vendor/symfony/web-profiler-bundle/Resources/views/Collector/translation.html.twig");
     }
 }

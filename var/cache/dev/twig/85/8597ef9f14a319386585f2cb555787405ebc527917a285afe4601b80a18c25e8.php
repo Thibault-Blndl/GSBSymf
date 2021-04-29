@@ -803,6 +803,6 @@ class __TwigTemplate_e57723aa68c7e73ed3a9d6276bbf33142fc2e05b5c4c476fae41ddfb585
         </table>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/config.html.twig", "/Users/Thibault/Downloads/GSBSYMFONY SIMON COMPLET/vendor/symfony/web-profiler-bundle/Resources/views/Collector/config.html.twig");
+", "@WebProfiler/Collector/config.html.twig", "/Users/Thibault/Desktop/GSBSymf/vendor/symfony/web-profiler-bundle/Resources/views/Collector/config.html.twig");
     }
 }

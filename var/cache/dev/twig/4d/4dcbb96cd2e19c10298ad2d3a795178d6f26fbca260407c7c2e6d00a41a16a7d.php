@@ -132,6 +132,6 @@ class __TwigTemplate_3ac20bbed725cac319bbeb4deed6d38523bb214ac78894848cd7b219875
 
     </div>
 {% endblock %}
-", "user/edit.html.twig", "/Users/Thibault/Desktop/MissionGSBSymfony/templates/user/edit.html.twig");
+", "user/edit.html.twig", "/Users/Thibault/Desktop/GSBSymf/templates/user/edit.html.twig");
     }
 }

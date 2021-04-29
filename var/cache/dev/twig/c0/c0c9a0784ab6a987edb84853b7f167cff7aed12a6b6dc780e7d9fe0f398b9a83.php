@@ -144,6 +144,6 @@ class __TwigTemplate_262ff5e7e9721204f245600701f3e2ba7c8e0e0f42751362a9c3bcee320
         {{ include('fiche_frais/_delete_form.html.twig') }}
     </div>
 {% endblock %}
-", "fiche_frais/edit.html.twig", "/Users/Thibault/Desktop/MissionGSBSymfony/templates/fiche_frais/edit.html.twig");
+", "fiche_frais/edit.html.twig", "/Users/Thibault/Desktop/GSBSymf/templates/fiche_frais/edit.html.twig");
     }
 }

@@ -81,6 +81,6 @@ class __TwigTemplate_3811453dc5ccc860a697ba1cf848e0e8bb2d49685b14b006aec1cc1a92a
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ user.id) }}\">
     <button class=\"btn\">Delete</button>
 </form>
-", "user/_delete_form.html.twig", "/Users/Thibault/Desktop/MissionGSBSymfony/templates/user/_delete_form.html.twig");
+", "user/_delete_form.html.twig", "/Users/Thibault/Desktop/GSBSymf/templates/user/_delete_form.html.twig");
     }
 }

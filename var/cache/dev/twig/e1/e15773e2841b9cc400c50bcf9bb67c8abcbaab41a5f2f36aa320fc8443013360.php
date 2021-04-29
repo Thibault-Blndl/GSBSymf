@@ -59,6 +59,6 @@ class __TwigTemplate_15c3988e0f2a7d71db7819b4be2df454aa56d6cd50addc826d038d4dc60
 
     public function getSourceContext()
     {
-        return new Source("", "footer.html.twig", "/Users/Thibault/Desktop/MissionGSBSymfony/templates/footer.html.twig");
+        return new Source("", "footer.html.twig", "/Users/Thibault/Desktop/GSBSymf/templates/footer.html.twig");
     }
 }

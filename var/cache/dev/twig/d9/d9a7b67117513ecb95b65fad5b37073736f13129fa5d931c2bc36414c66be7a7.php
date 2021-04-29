@@ -81,6 +81,6 @@ class __TwigTemplate_cfe32c0526e265dc3f843ba9f9f8a45c73d15a0d8ead2cee72aea7280a0
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ fiche_frai.id) }}\">
     <button class=\"btn\">Delete</button>
 </form>
-", "fiche_frais/_delete_form.html.twig", "/Users/Thibault/Desktop/MissionGSBSymfony/templates/fiche_frais/_delete_form.html.twig");
+", "fiche_frais/_delete_form.html.twig", "/Users/Thibault/Desktop/GSBSymf/templates/fiche_frais/_delete_form.html.twig");
     }
 }

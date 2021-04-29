@@ -173,6 +173,6 @@ class __TwigTemplate_e93498d282ca7bf4e42a3b5e4fce4c33687fcc2e76e3174aebdcbc3de9b
     </section>
     <script src=\"assets/js/jquery.min.js\"></script>
     <script src=\"assets/bootstrap/js/bootstrap.min.js\"></script>
-{% endblock %}", "accueil/index.html.twig", "/Users/Thibault/Downloads/GSBSYMFONY SIMON COMPLET/templates/accueil/index.html.twig");
+{% endblock %}", "accueil/index.html.twig", "/Users/Thibault/Desktop/GSBSymf/templates/accueil/index.html.twig");
     }
 }
