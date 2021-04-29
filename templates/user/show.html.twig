@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon Compte{% endblock %}
+
+{% block body %}
+    <div class="pt-5">
+    <h1 class="pt-5">{{ user.getNom }} {{ user.getPrenom }}</h1>
+
+    <table class="table">
+        <tbody>
+
+            <tr>
+                <th>Nom d'Utilisateur :</th>
+                <td>{{ user.username }}</td>
+            </tr>
+
+            <tr>
+                <th>Adresse :</th>
+                <td>{{ user.adresse }}</td>
+            </tr>
+            <tr>
+                <th>Code postal :</th>
+                <td>{{ user.codePostal }}</td>
+            </tr>
+            <tr>
+                <th>Ville :</th>
+                <td>{{ user.ville }}</td>
+            </tr>
+            <tr>
+                <th>Date d'embauche :</th>
+                <td>{{ user.dateEmbauche ? user.dateEmbauche|date('Y-m-d') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <a class="btn btn-outline-danger" href="{{ path('user_edit', {'id': user.id}) }}">Modifier le Profil </a>
+    <a class="btn btn-outline-danger" href="{{ path('user_edit', {'id': user.id, 'pwd': user}) }}">Modifier le mot de passe </a>
+
+{#  {{ include('user/_delete_form.html.twig') }}#}
+{% endblock %}

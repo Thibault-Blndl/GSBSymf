@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit FicheFrais{% endblock %}
+
+{% block body %}
+    <div class="pt-5">
+        <h1 class="pt-5">Edit FicheFrais</h1>
+
+        {{ include('fiche_frais/_form.html.twig', {'button_label': 'Update'}) }}
+
+        <a href="{{ path('fiche_frais_index') }}">back to list</a>
+
+        {{ include('fiche_frais/_delete_form.html.twig') }}
+    </div>
+{% endblock %}

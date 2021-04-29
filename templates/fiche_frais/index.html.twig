@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mes fiches de frais{% endblock %}
+
+{% block body %}
+    <div class="pt-5">
+        <h1 class="pt-5">Mes fiches de frais</h1>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Mois</th>
+                    <th>État</th>
+                    <th>Montant</th>
+                    <th>Date modif</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% if is_granted('ROLE_ADMIN') %}
+                {% for fiche_frai in fiche_frais_admin %}
+                    <tr>
+                        <td>{{ fiche_frai.mois|date('m-Y') }}</td>
+                        <td>{{ fiche_frai.nbJustificatifs }}</td>
+                        <td>{{ fiche_frai.montantValide }}</td>
+                        <td>{{ fiche_frai.dateModif ? fiche_frai.dateModif|date('Y-m-d') : '' }}</td>
+                        <td>{{ fiche_frai.motifRefus }}</td>
+                        <td>
+                            <a href="{{ path('fiche_frais_show', {'id': fiche_frai.id}) }}">show</a>
+                            <a href="{{ path('fiche_frais_edit', {'id': fiche_frai.id}) }}">edit</a>
+                        </td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td colspan="7">Aucune fiche de frais</td>
+                    </tr>
+                {% endfor %}
+            {% else %}
+                {% for fiche_frai in fiche_frais %}
+                    <tr>
+                        <td>{{ fiche_frai.mois|date('m-Y') }}</td>
+                        <td>{{ fiche_frai.etat }}</td>
+                        <td>{{ fiche_frai.montantValide }}</td>
+                        <td>{{ fiche_frai.dateModif ? fiche_frai.dateModif|date('Y-m-d') : '' }}</td>
+                        <td>
+                            <a class="btn btn-outline-danger" href="{{ path('ligne_frais_edit', {'id': fiche_frai.id}) }}">Modifier</a>
+                        </td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td colspan="7">Aucune fiche de frais</td>
+                    </tr>
+                {% endfor %}
+            {% endif %}
+            </tbody>
+        </table>
+    </div>
+    <a href="{{ path('fiche_frais_new') }}">Create new</a>
+{% endblock %}

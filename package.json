@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "@symfony/stimulus-bridge": "^2.0.2",
+    "@symfony/webpack-encore": "^1.1.2",
+    "bootstrap": "^4.6.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "stimulus": "^2.0.0",
+    "webpack-notifier": "^1.13.0"
+  },
+  "scripts": {
+    "watch": "node node_modules/cross-env/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "js,jsx"
+    }
+  }
+}

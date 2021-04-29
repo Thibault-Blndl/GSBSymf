@@ -1,0 +1,44 @@
+<nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+    <a class="navbar-brand" href="{{ path('accueil') }}">
+        <img src="{{ asset('assets/logo.png') }}" width="71px">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navcol-1">
+        {% if is_granted("ROLE_USER") %}
+            <ul class="navbar-nav pr-5 pl-5">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ path('user_show', {'id': app.user.id}) }}">Mon Compte</a>
+                </li>
+            </ul>
+            {% if app.user.getTypeUser().id == 1 %}
+                <ul class="navbar-nav pr-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{{ path('fiche_frais_index') }}">Mes Fiches de Frais</a>
+                    </li>
+                </ul>
+            {% endif %}
+            <ul class="navbar-nav pr-5 ml-auto">
+                <li class="nav-item">
+                    <a class="btn btn-outline-primary" href="{{ path('app_logout') }}">Se Déconnecter</a>
+                </li>
+            </ul>
+        {% else %}
+            <ul class="navbar-nav pr-5 pl-5">
+                <li class="nav-item">
+                    <a class="nav-link active pr-5" href="{{ path('si') }}">Le SI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active pr-5" href="{{ path('reseau') }}">Le Réseau</a>
+                </li>
+            </ul>
+            <ul class ="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="btn btn-outline-primary" href="{{ path ('app_login') }}">Se Connecter</a>
+                </li>
+            </ul>
+        {% endif %}
+    </div>
+</nav>

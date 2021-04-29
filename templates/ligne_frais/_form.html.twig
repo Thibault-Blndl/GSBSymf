@@ -1,0 +1,54 @@
+{{ form_start(formFraisForfait) }}
+    <div class="container">
+        {% if formFraisForfait|length >= 2 %}
+            <h1 class="pt-5">Modification Frais Forfait</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                       <th>Nom</th>
+                       <th>Quantité</th>
+                       <th>Montant</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in 0..3 %}
+                        <tr>
+                            <td>{{ form_row(formFraisForfait[i].fraisForfait.libelle, {'attr':{'class':'form-control'}}) }}</td>
+                            <td>{{ form_row(formFraisForfait[i].quantite, {'attr':{'class':'form-control'}}) }}</td>
+                            <td>{{ form_row(formFraisForfait[i].fraisForfait.montant, {'attr':{'class':'form-control'}}) }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <h1 class="pt-5">Modification Frais Hors Forfait</h1>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Libelle</th>
+                    <th>Jour</th>
+                    <th>Montant</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for i in 0..formFraisHorsForfait|length-2 %}
+                    <tr>
+                        <td>{{ form_row(formFraisHorsForfait[i].libelle, {'attr':{'class':'form-control'}}) }}</td>
+                        <td>{{ form_row(formFraisHorsForfait[i].date, {'date_pattern': '<span style="display: none;">{{ year }} {{ month }}</span> {{ day }}'}) }}</td>
+                        <td>{{ form_row(formFraisHorsForfait[i].montant, {'attr':{'class':'form-control'}}) }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+
+            <button class="btn btn-outline-success">{{ button_label|default('Modifier') }}</button>
+        {% else %}
+            <p>Il n'y a rien ici !</p>
+        {% endif %}
+
+        <span style="padding-bottom: 10rem">
+            <a class="btn btn-outline-danger" href="{{ path('fiche_frais_index') }}">Retour aux fiches</a>
+        </span>
+    </div>
+{{ form_end(formFraisForfait) }}
+
