@@ -7275,3 +7275,9 @@ ab9500,127.0.0.1,GET,https://127.0.0.1:8000/assets/js/jquery.min.js,1619699698,,
 c035c1,127.0.0.1,GET,https://127.0.0.1:8000/assets/bootstrap/js/bootstrap.min.js,1619699698,,404
 c1f9bc,127.0.0.1,GET,https://127.0.0.1:8000/fichefrais/,1619699701,,200
 b4ba98,127.0.0.1,GET,https://127.0.0.1:8000/user/1,1619699702,,200
+7e8dde,127.0.0.1,GET,https://127.0.0.1:8000/,1619700294,,200
+8b2866,127.0.0.1,GET,https://127.0.0.1:8000/assets/bootstrap/js/bootstrap.min.js,1619700294,ef0873,404
+0dd1e2,127.0.0.1,GET,https://127.0.0.1:8000/assets/js/jquery.min.js,1619700294,5af77a,404
+ef0873,127.0.0.1,GET,https://127.0.0.1:8000/assets/bootstrap/js/bootstrap.min.js,1619700294,,404
+5af77a,127.0.0.1,GET,https://127.0.0.1:8000/assets/js/jquery.min.js,1619700294,,404
+08ab54,127.0.0.1,GET,https://127.0.0.1:8000/fichefrais/,1619700296,,200
