@@ -32,6 +32,7 @@ class FicheFraisType extends AbstractType
             ->add('motifRefus')
             ->add('user')
             ->add('etat')
+            ->add('acteurs')
             ->addEventListener(
                 FormEvents::PRE_SET_DATA,
                 [$this, 'onPreSetData']

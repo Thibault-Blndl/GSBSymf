@@ -20,6 +20,7 @@ class FicheFraisFixtures extends Fixture implements DependentFixtureInterface
         $fichefrais->setMontantValide('0');
         $fichefrais->setNbJustificatifs('0');
         $fichefrais->setMotifRefus(null);
+        $fichefrais->setActeurs('1');
         $this->addReference('fiche', $fichefrais);
         $manager->persist($fichefrais);
 
@@ -31,6 +32,7 @@ class FicheFraisFixtures extends Fixture implements DependentFixtureInterface
         $fichefrais2->setMontantValide('0');
         $fichefrais2->setNbJustificatifs('0');
         $fichefrais2->setMotifRefus(null);
+        $fichefrais2->setActeurs('2');
         $this->addReference('fiche2', $fichefrais2);
         $manager->persist($fichefrais2);
 

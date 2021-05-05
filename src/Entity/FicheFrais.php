@@ -172,6 +172,18 @@ class FicheFrais
         return $this;
     }
 
+    public function getActeurs(): ?string
+    {
+        return $this->acteurs;
+    }
+
+    public function setActeurs(?string $acteurs): self
+    {
+        $this->acteurs = $acteurs;
+
+        return $this;
+    }
+
     /**
      * @return Collection|LigneFraisForfait[]
      */

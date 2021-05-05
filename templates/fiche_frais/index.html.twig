@@ -13,6 +13,7 @@
                     <th>État</th>
                     <th>Montant</th>
                     <th>Date modif</th>
+                    <th>Acteurs</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,6 +25,7 @@
                         <td>{{ fiche_frai.montantValide }}</td>
                         <td>{{ fiche_frai.dateModif ? fiche_frai.dateModif|date('Y-m-d') : '' }}</td>
                         <td>{{ fiche_frai.motifRefus }}</td>
+                        <td>{{ fiche_frai.acteurs }}</td>
                         <td>
                             <a href="{{ path('fiche_frais_show', {'id': fiche_frai.id}) }}">show</a>
                             <a href="{{ path('fiche_frais_edit', {'id': fiche_frai.id}) }}">edit</a>
@@ -41,6 +43,7 @@
                         <td>{{ fiche_frai.etat }}</td>
                         <td>{{ fiche_frai.montantValide }}</td>
                         <td>{{ fiche_frai.dateModif ? fiche_frai.dateModif|date('Y-m-d') : '' }}</td>
+                        <td>{{ fiche_frai.acteurs}}</td>
                         <td>
                             <a class="btn btn-outline-danger" href="{{ path('ligne_frais_edit', {'id': fiche_frai.id}) }}">Modifier</a>
                         </td>

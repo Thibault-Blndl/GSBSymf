@@ -66,10 +66,10 @@ class FicheFrais extends \App\Entity\FicheFrais implements \Doctrine\ORM\Proxy\P
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'id', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'mois', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'nbJustificatifs', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'montantValide', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'dateModif', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'user', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'etat', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'ligneFraisForfait', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'lignesFraisHorsForfait', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'motifRefus'];
+            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'id', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'mois', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'nbJustificatifs', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'montantValide', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'dateModif', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'user', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'etat', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'ligneFraisForfait', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'lignesFraisHorsForfait', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'acteurs', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'motifRefus'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'id', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'mois', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'nbJustificatifs', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'montantValide', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'dateModif', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'user', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'etat', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'ligneFraisForfait', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'lignesFraisHorsForfait', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'motifRefus'];
+        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'id', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'mois', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'nbJustificatifs', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'montantValide', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'dateModif', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'user', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'etat', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'ligneFraisForfait', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'lignesFraisHorsForfait', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'acteurs', '' . "\0" . 'App\\Entity\\FicheFrais' . "\0" . 'motifRefus'];
     }
 
     /**
@@ -343,6 +343,28 @@ class FicheFrais extends \App\Entity\FicheFrais implements \Doctrine\ORM\Proxy\P
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setDateModif', [$dateModif]);
 
         return parent::setDateModif($dateModif);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getActeur(): ?string
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getActeur', []);
+
+        return parent::getActeur();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setActeurs(?string $acteurs): \App\Entity\FicheFrais
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setActeurs', [$acteurs]);
+
+        return parent::setActeurs($acteurs);
     }
 
     /**

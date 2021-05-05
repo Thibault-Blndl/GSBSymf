@@ -95,48 +95,53 @@ class __TwigTemplate_198e3fac13ee3dded3b4f0ab5fa7a5d30f136a1e31a35fa1add01725f69
                     <th>État</th>
                     <th>Montant</th>
                     <th>Date modif</th>
+                    <th>Acteurs</th>
                 </tr>
             </thead>
             <tbody>
             ";
-        // line 19
+        // line 20
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-            // line 20
+            // line 21
             echo "                ";
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable((isset($context["fiche_frais_admin"]) || array_key_exists("fiche_frais_admin", $context) ? $context["fiche_frais_admin"] : (function () { throw new RuntimeError('Variable "fiche_frais_admin" does not exist.', 20, $this->source); })()));
+            $context['_seq'] = twig_ensure_traversable((isset($context["fiche_frais_admin"]) || array_key_exists("fiche_frais_admin", $context) ? $context["fiche_frais_admin"] : (function () { throw new RuntimeError('Variable "fiche_frais_admin" does not exist.', 21, $this->source); })()));
             $context['_iterated'] = false;
             foreach ($context['_seq'] as $context["_key"] => $context["fiche_frai"]) {
-                // line 21
+                // line 22
                 echo "                    <tr>
                         <td>";
-                // line 22
-                echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "mois", [], "any", false, false, false, 22), "m-Y"), "html", null, true);
-                echo "</td>
-                        <td>";
                 // line 23
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "nbJustificatifs", [], "any", false, false, false, 23), "html", null, true);
+                echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "mois", [], "any", false, false, false, 23), "m-Y"), "html", null, true);
                 echo "</td>
                         <td>";
                 // line 24
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "montantValide", [], "any", false, false, false, 24), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "nbJustificatifs", [], "any", false, false, false, 24), "html", null, true);
                 echo "</td>
                         <td>";
                 // line 25
-                ((twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "dateModif", [], "any", false, false, false, 25)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "dateModif", [], "any", false, false, false, 25), "Y-m-d"), "html", null, true))) : (print ("")));
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "montantValide", [], "any", false, false, false, 25), "html", null, true);
                 echo "</td>
                         <td>";
                 // line 26
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "motifRefus", [], "any", false, false, false, 26), "html", null, true);
+                ((twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "dateModif", [], "any", false, false, false, 26)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "dateModif", [], "any", false, false, false, 26), "Y-m-d"), "html", null, true))) : (print ("")));
+                echo "</td>
+                        <td>";
+                // line 27
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "motifRefus", [], "any", false, false, false, 27), "html", null, true);
+                echo "</td>
+                        <td>";
+                // line 28
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "acteurs", [], "any", false, false, false, 28), "html", null, true);
                 echo "</td>
                         <td>
                             <a href=\"";
-                // line 28
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("fiche_frais_show", ["id" => twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "id", [], "any", false, false, false, 28)]), "html", null, true);
+                // line 30
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("fiche_frais_show", ["id" => twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "id", [], "any", false, false, false, 30)]), "html", null, true);
                 echo "\">show</a>
                             <a href=\"";
-                // line 29
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("fiche_frais_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "id", [], "any", false, false, false, 29)]), "html", null, true);
+                // line 31
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("fiche_frais_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "id", [], "any", false, false, false, 31)]), "html", null, true);
                 echo "\">edit</a>
                         </td>
                     </tr>
@@ -144,7 +149,7 @@ class __TwigTemplate_198e3fac13ee3dded3b4f0ab5fa7a5d30f136a1e31a35fa1add01725f69
                 $context['_iterated'] = true;
             }
             if (!$context['_iterated']) {
-                // line 33
+                // line 35
                 echo "                    <tr>
                         <td colspan=\"7\">Aucune fiche de frais</td>
                     </tr>
@@ -153,37 +158,41 @@ class __TwigTemplate_198e3fac13ee3dded3b4f0ab5fa7a5d30f136a1e31a35fa1add01725f69
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['fiche_frai'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 37
+            // line 39
             echo "            ";
         } else {
-            // line 38
+            // line 40
             echo "                ";
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable((isset($context["fiche_frais"]) || array_key_exists("fiche_frais", $context) ? $context["fiche_frais"] : (function () { throw new RuntimeError('Variable "fiche_frais" does not exist.', 38, $this->source); })()));
+            $context['_seq'] = twig_ensure_traversable((isset($context["fiche_frais"]) || array_key_exists("fiche_frais", $context) ? $context["fiche_frais"] : (function () { throw new RuntimeError('Variable "fiche_frais" does not exist.', 40, $this->source); })()));
             $context['_iterated'] = false;
             foreach ($context['_seq'] as $context["_key"] => $context["fiche_frai"]) {
-                // line 39
+                // line 41
                 echo "                    <tr>
                         <td>";
-                // line 40
-                echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "mois", [], "any", false, false, false, 40), "m-Y"), "html", null, true);
-                echo "</td>
-                        <td>";
-                // line 41
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "etat", [], "any", false, false, false, 41), "html", null, true);
-                echo "</td>
-                        <td>";
                 // line 42
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "montantValide", [], "any", false, false, false, 42), "html", null, true);
+                echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "mois", [], "any", false, false, false, 42), "m-Y"), "html", null, true);
                 echo "</td>
                         <td>";
                 // line 43
-                ((twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "dateModif", [], "any", false, false, false, 43)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "dateModif", [], "any", false, false, false, 43), "Y-m-d"), "html", null, true))) : (print ("")));
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "etat", [], "any", false, false, false, 43), "html", null, true);
+                echo "</td>
+                        <td>";
+                // line 44
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "montantValide", [], "any", false, false, false, 44), "html", null, true);
+                echo "</td>
+                        <td>";
+                // line 45
+                ((twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "dateModif", [], "any", false, false, false, 45)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "dateModif", [], "any", false, false, false, 45), "Y-m-d"), "html", null, true))) : (print ("")));
+                echo "</td>
+                        <td>";
+                // line 46
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "acteurs", [], "any", false, false, false, 46), "html", null, true);
                 echo "</td>
                         <td>
                             <a class=\"btn btn-outline-danger\" href=\"";
-                // line 45
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("ligne_frais_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "id", [], "any", false, false, false, 45)]), "html", null, true);
+                // line 48
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("ligne_frais_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["fiche_frai"], "id", [], "any", false, false, false, 48)]), "html", null, true);
                 echo "\">Modifier</a>
                         </td>
                     </tr>
@@ -191,7 +200,7 @@ class __TwigTemplate_198e3fac13ee3dded3b4f0ab5fa7a5d30f136a1e31a35fa1add01725f69
                 $context['_iterated'] = true;
             }
             if (!$context['_iterated']) {
-                // line 49
+                // line 52
                 echo "                    <tr>
                         <td colspan=\"7\">Aucune fiche de frais</td>
                     </tr>
@@ -200,15 +209,15 @@ class __TwigTemplate_198e3fac13ee3dded3b4f0ab5fa7a5d30f136a1e31a35fa1add01725f69
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['fiche_frai'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 53
+            // line 56
             echo "            ";
         }
-        // line 54
+        // line 57
         echo "            </tbody>
         </table>
     </div>
     <a href=\"";
-        // line 57
+        // line 60
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("fiche_frais_new");
         echo "\">Create new</a>
 ";
@@ -232,7 +241,7 @@ class __TwigTemplate_198e3fac13ee3dded3b4f0ab5fa7a5d30f136a1e31a35fa1add01725f69
 
     public function getDebugInfo()
     {
-        return array (  212 => 57,  207 => 54,  204 => 53,  195 => 49,  186 => 45,  181 => 43,  177 => 42,  173 => 41,  169 => 40,  166 => 39,  160 => 38,  157 => 37,  148 => 33,  139 => 29,  135 => 28,  130 => 26,  126 => 25,  122 => 24,  118 => 23,  114 => 22,  111 => 21,  105 => 20,  103 => 19,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  221 => 60,  216 => 57,  213 => 56,  204 => 52,  195 => 48,  190 => 46,  186 => 45,  182 => 44,  178 => 43,  174 => 42,  171 => 41,  165 => 40,  162 => 39,  153 => 35,  144 => 31,  140 => 30,  135 => 28,  131 => 27,  127 => 26,  123 => 25,  119 => 24,  115 => 23,  112 => 22,  106 => 21,  104 => 20,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -252,6 +261,7 @@ class __TwigTemplate_198e3fac13ee3dded3b4f0ab5fa7a5d30f136a1e31a35fa1add01725f69
                     <th>État</th>
                     <th>Montant</th>
                     <th>Date modif</th>
+                    <th>Acteurs</th>
                 </tr>
             </thead>
             <tbody>
@@ -263,6 +273,7 @@ class __TwigTemplate_198e3fac13ee3dded3b4f0ab5fa7a5d30f136a1e31a35fa1add01725f69
                         <td>{{ fiche_frai.montantValide }}</td>
                         <td>{{ fiche_frai.dateModif ? fiche_frai.dateModif|date('Y-m-d') : '' }}</td>
                         <td>{{ fiche_frai.motifRefus }}</td>
+                        <td>{{ fiche_frai.acteurs }}</td>
                         <td>
                             <a href=\"{{ path('fiche_frais_show', {'id': fiche_frai.id}) }}\">show</a>
                             <a href=\"{{ path('fiche_frais_edit', {'id': fiche_frai.id}) }}\">edit</a>
@@ -280,6 +291,7 @@ class __TwigTemplate_198e3fac13ee3dded3b4f0ab5fa7a5d30f136a1e31a35fa1add01725f69
                         <td>{{ fiche_frai.etat }}</td>
                         <td>{{ fiche_frai.montantValide }}</td>
                         <td>{{ fiche_frai.dateModif ? fiche_frai.dateModif|date('Y-m-d') : '' }}</td>
+                        <td>{{ fiche_frai.acteurs}}</td>
                         <td>
                             <a class=\"btn btn-outline-danger\" href=\"{{ path('ligne_frais_edit', {'id': fiche_frai.id}) }}\">Modifier</a>
                         </td>
