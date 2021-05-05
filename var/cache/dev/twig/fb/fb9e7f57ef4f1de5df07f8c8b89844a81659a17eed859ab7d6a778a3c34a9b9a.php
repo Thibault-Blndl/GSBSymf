@@ -102,6 +102,6 @@ class __TwigTemplate_1f38506f8a197415977ba4d916242367eefb6555519ad1b429b5bf983ee
     {% if link|default(false) %}</a>{% endif %}
         <div class=\"sf-toolbar-info\">{{ text|default('') }}</div>
 </div>
-", "@WebProfiler/Profiler/toolbar_item.html.twig", "/Users/Thibault/Downloads/GSBSYMFONY SIMON COMPLET/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar_item.html.twig");
+", "@WebProfiler/Profiler/toolbar_item.html.twig", "/Users/Thibault/Desktop/GSBSymf/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar_item.html.twig");
     }
 }

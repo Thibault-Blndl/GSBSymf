@@ -644,6 +644,6 @@ class __TwigTemplate_03e9cef3730a0f961e49dad24956f682e6f10e713321b12cb60e8038875
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/notifier.html.twig", "/Users/Thibault/Downloads/GSBSYMFONY SIMON COMPLET/vendor/symfony/web-profiler-bundle/Resources/views/Collector/notifier.html.twig");
+", "@WebProfiler/Collector/notifier.html.twig", "/Users/Thibault/Desktop/GSBSymf/vendor/symfony/web-profiler-bundle/Resources/views/Collector/notifier.html.twig");
     }
 }

@@ -205,6 +205,6 @@ class __TwigTemplate_0457a78b0d737532eb4655ead3c7ba8cea69176897b7400cf0ce5c565f2
     </section>
     <script src=\"assets/js/jquery.min.js\"></script>
     <script src=\"assets/bootstrap/js/bootstrap.min.js\"></script>
-{% endblock %}", "accueil/logged.html.twig", "/Users/Thibault/Downloads/GSBSYMFONY SIMON COMPLET/templates/accueil/logged.html.twig");
+{% endblock %}", "accueil/logged.html.twig", "/Users/Thibault/Desktop/GSBSymf/templates/accueil/logged.html.twig");
     }
 }

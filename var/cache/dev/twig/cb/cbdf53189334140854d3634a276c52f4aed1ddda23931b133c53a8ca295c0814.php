@@ -1671,6 +1671,6 @@ class __TwigTemplate_98c797bd1ae2b5b7b820ee54bb629651e478634f50629d63bd666ced606
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/Users/Thibault/Downloads/GSBSYMFONY SIMON COMPLET/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/Users/Thibault/Desktop/GSBSymf/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }

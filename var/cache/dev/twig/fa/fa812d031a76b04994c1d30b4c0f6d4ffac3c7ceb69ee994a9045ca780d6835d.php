@@ -168,6 +168,6 @@ class __TwigTemplate_6a2e55d660b5aefb46a29adf29dd2cc37dee6c8baa33d3f7eee1b7ad364
 
     {{ include('@WebProfiler/Profiler/toolbar_item.html.twig', { link: false }) }}
 {% endblock %}
-", "@WebProfiler/Collector/ajax.html.twig", "/Users/Thibault/Downloads/GSBSYMFONY SIMON COMPLET/vendor/symfony/web-profiler-bundle/Resources/views/Collector/ajax.html.twig");
+", "@WebProfiler/Collector/ajax.html.twig", "/Users/Thibault/Desktop/GSBSymf/vendor/symfony/web-profiler-bundle/Resources/views/Collector/ajax.html.twig");
     }
 }

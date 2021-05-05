@@ -35,22 +35,23 @@ class FicheFraisController extends AbstractController
     ): Response
     {
         $ficheFrais = $ficheFraisRepository->findBy(['user' => $tokenStorage->getToken()->getUser()], ['mois' => 'DESC']);
-
+        //affichage des fiches de frais de l'utilisateur connecté trié par mois et décroissant
         foreach($ficheFrais as $fiche)
         {
-            $lignesFraisForfait = $fiche->getLignesFraisForfait()->toArray();
-            $lignesFraisHorsForfait = $fiche->getLignesFraisHorsForfait()->toArray();
+            $lignesFraisForfait = $fiche->getLignesFraisForfait()->toArray();  //On récupère les lignes frais forfait
+            $lignesFraisHorsForfait = $fiche->getLignesFraisHorsForfait()->toArray(); //et les hors forfait
 
-            $montantTotalForfait = 0;
+            $montantTotalForfait = 0; //On set le montant à 0
             foreach ($lignesFraisForfait as $ligneFraisForfait)
             {
-                $quantite = $ligneFraisForfait->getQuantite();
-                $montant = $ligneFraisForfait->getFraisForfait()->getMontant();
+                $quantite = $ligneFraisForfait->getQuantite(); //On récup la qté des fraisForfait
+                $montant = $ligneFraisForfait->getFraisForfait()->getMontant(); //et le montant
 
-                $montantTotalForfait += $quantite * $montant;
+                $montantTotalForfait += $quantite * $montant; //On calcul sa somme
+                //+= veut dire $montantTotalForfait +($quantité*$montant)
             }
 
-            $montantTotalHorsForfait = 0;
+            $montantTotalHorsForfait = 0; //Pareil qu'avant mais pour les HorsForfait
             foreach ($lignesFraisHorsForfait as $ligneFraisHorsForfait)
             {
                 $montantTotalHorsForfait += $ligneFraisHorsForfait->getMontant();
@@ -58,12 +59,12 @@ class FicheFraisController extends AbstractController
 
             $fiche->setMontantValide($montantTotalForfait + $montantTotalHorsForfait);
             $em->persist($fiche);
-            $em->flush();
+            $em->flush(); //on vient mettre à jour la fiche
         }
 
         return $this->render('fiche_frais/index.html.twig', [
             'fiche_frais' => $ficheFrais,
-            'fiche_frais_admin' => $ficheFraisRepository->findAll(),
+            'fiche_frais_admin' => $ficheFraisRepository->findAll(), //prévu pour afficher toutes les fiches à l'admin
         ]);
     }
 

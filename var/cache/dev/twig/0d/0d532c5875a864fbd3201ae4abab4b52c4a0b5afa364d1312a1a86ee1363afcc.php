@@ -155,6 +155,6 @@ class __TwigTemplate_17a3de09f31a111a3adf426567e3614bab43b2161adc576596c96c5a452
 {% block panel %}
     {{ render(path('_profiler_router', { token: token })) }}
 {% endblock %}
-", "@WebProfiler/Collector/router.html.twig", "/Users/Thibault/Downloads/GSBSYMFONY SIMON COMPLET/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
+", "@WebProfiler/Collector/router.html.twig", "/Users/Thibault/Desktop/GSBSymf/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
     }
 }

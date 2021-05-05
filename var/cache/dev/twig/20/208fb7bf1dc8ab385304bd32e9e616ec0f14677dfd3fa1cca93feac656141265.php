@@ -126,6 +126,6 @@ class __TwigTemplate_5efb4a41098c6c74d9d0b997f85a354614bd7b9afcd1dab82354c7cae5b
         {{ include('ligne_frais/_form.html.twig') }}
     </div>
 {% endblock %}
-", "ligne_frais/edit.html.twig", "/Users/Thibault/Desktop/MissionGSBSymfony/templates/ligne_frais/edit.html.twig");
+", "ligne_frais/edit.html.twig", "/Users/Thibault/Desktop/GSBSymf/templates/ligne_frais/edit.html.twig");
     }
 }

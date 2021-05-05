@@ -174,6 +174,6 @@ class __TwigTemplate_1b9ca13a78ac9f8edcab4ab1a978db15eb8e2dd640931b138d1d318875b
     <script src=\"assets/js/jquery.min.js\"></script>
     <script src=\"assets/bootstrap/js/bootstrap.min.js\"></script>
 {% endblock %}
-", "si/index.html.twig", "/Users/Thibault/Desktop/MissionGSBSymfony/templates/si/index.html.twig");
+", "si/index.html.twig", "/Users/Thibault/Desktop/GSBSymf/templates/si/index.html.twig");
     }
 }

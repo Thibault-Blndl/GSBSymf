@@ -28,7 +28,7 @@ class AccueilController extends AbstractController
     public function logged(TokenStorageInterface $tokenStorage): Response
     {
         return $this->render('accueil/logged.html.twig', [
-            'currentUser' => $tokenStorage->getToken()->getUser()
+            'currentUser' => $tokenStorage->getToken()->getUser()  //Verification que l'utilisateur est log ou non
         ]);
     }
 
